@@ -6,9 +6,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Player realPlayer = new Player(1, "Deniz" , "Ayg¸n" , new Date(1999,9,6) , "41554564228");
+		Player realPlayer = new Player(1, "Deniz" , "Ayg√ºn" , new Date(1999,9,6) , "11111111111");
 		@SuppressWarnings("deprecation")
-		Player fakePlayer = new Player(2,"÷mer" , "Aksu" , new Date(1000,0,0) , "45295851435");
+		Player fakePlayer = new Player(2,"√ñmer" , "Aksu" , new Date(1000,0,0) , "45295851435");
 		MernisServisAdaper playerCheckManager = new MernisServisAdaper();
 		PlayerManager playerManager = new PlayerManager(playerCheckManager);
 		playerManager.registerPlayer(realPlayer);
@@ -25,7 +25,7 @@ public class Main {
 		
 		System.out.println("******************************************************************************");
 		
-		Campaign campaign = new Campaign("Bahar ›ndirimi" , 30);
+		Campaign campaign = new Campaign("Bahar √ùndirimi" , 30);
 		CampaignManager campaignManager = new CampaignManager();
 		campaignManager.addCampaign(campaign);
 		game2.gameWithCampaign(campaign);
